@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Product{
+            constructor(id, title, category_id, brand_id, salers_id){
+                this.id = id;
+                this.title = title;
+                this.category_id = category_id;
+                this.brand_id = brand_id;
+                this.salers_id = salers_id;
+            }
+        }
+        class Category{
+            constructor(id, title){
+                this.id = id;
+                this.title = title;
+            }
+        }
+        class Salers{
+            constructor(id, title) {
+                this.id = id;
+                this.title = title;
+            }
+        }
+        class Brand{
+            constructor(id, title){
+                this.id = id;
+                this.title = title;
+            }
+        }
+        let products = []
+        let category = []
+        let salers = []
+        let brand = []
+        products.push(new Product(1, "adidas_Yeezy_500", 1, 1, 1), new Product(2, "Adidas_Gazelle_BB5476", 1, 1, 1), new Product(3, "Samsung_Galaxy_S20_5G_G981U", 2, 2, 2), new Product(4, "Samsung_Galaxy_Note_20", 2, 2, 2), new Product(5, "Original_Samsung_AKG_Ohrhörer_Kopfhörer_Headset_Galaxy_S6_S8_S8_S9_Note_8_9_A5", 3, 2, 3), new Product(6, "Adidas_Sport_In-Ear_FWD_In-Ear_Wireless_Earphones_Schwarz", 2, 2, 3))
+        category.push(new Category(1, "Sneakers"), new Category(2, "Phones"), new Category(3, "Headphones"))
+        salers.push(new Salers(1, ""), new Salers(2, "Ashot"), new Salers(3, "Vladimir"))
+        brand.push(new Brand(1, "Adidas"), new Brand(2,"Samsung"))
+        let search = prompt("Введите айди продукта");
+        for(let i = 1; i < 7; i=i+5){
+            
+            if(search = i){
+                alert("y")
+            }
+            else{
+                alert("n")
+            }
+            
+        }
+    </script>
+</body>
+</html>
